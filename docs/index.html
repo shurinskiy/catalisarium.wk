@@ -166,18 +166,22 @@
 		<div class="order__offer">
 			<p class="order__offer-text">У нас есть возможность принять ваш автокатализатор, забрав его <strong>в удобном для вас месте</strong></p>
 		</div>
-		<form action="./" class="callback order__form">
+		<div class="order__form"><form action="./" class="callback callback_success">
 	<h2 class="callback__title">Заказать консультацию менеджера для выезда</h2>
 	<p class="callback__note">Укажите свои данные и наш специалист свяжется с вами в течении 15 минут</p>
-	<input class="callback__input" type="text" placeholder="Ваше имя">
-	<input class="callback__input" type="tel" placeholder="+ 7 (900) 000-00-00">
+	<div class="callback__alert">
+		<!-- <h2>Спасибо!<br>Заявка отправлена</h2><span>Наш специалист перезвонит вам в ближайшее время, чтобы ответить на вопросы</span> -->
+	</div>
+	<label class="callback__input"><input type="text" placeholder="Ваше имя"></label>
+	<label class="callback__input callback__input_error"><input type="tel" placeholder="+ 7 (900) 000-00-00"></label>
+	<label class="callback__input"><input type="text" name="contact_address"></label>
 	<div class="callback__agree">
 		<input type="checkbox">
 		<p>Вы соглашаетесь с уcловиями обработки персональных данных. <a href="./">Ознакомиться.</a></p>
 	</div>
 	<input class="callback__submit button" type="submit" value="Заказать">
 </form>
-
+</div>
 	</div>
 </section>
 
@@ -212,20 +216,22 @@
 </section>
 
 <div class="modal__hidden">
-	<div id="callback">
-		<form action="./" class="callback modal__callback">
+	<div id="callback"><form action="./" class="callback callback_success">
 	<h2 class="callback__title">Заказать консультацию менеджера для выезда</h2>
 	<p class="callback__note">Укажите свои данные и наш специалист свяжется с вами в течении 15 минут</p>
-	<input class="callback__input" type="text" placeholder="Ваше имя">
-	<input class="callback__input" type="tel" placeholder="+ 7 (900) 000-00-00">
+	<div class="callback__alert">
+		<!-- <h2>Спасибо!<br>Заявка отправлена</h2><span>Наш специалист перезвонит вам в ближайшее время, чтобы ответить на вопросы</span> -->
+	</div>
+	<label class="callback__input"><input type="text" placeholder="Ваше имя"></label>
+	<label class="callback__input callback__input_error"><input type="tel" placeholder="+ 7 (900) 000-00-00"></label>
+	<label class="callback__input"><input type="text" name="contact_address"></label>
 	<div class="callback__agree">
 		<input type="checkbox">
 		<p>Вы соглашаетесь с уcловиями обработки персональных данных. <a href="./">Ознакомиться.</a></p>
 	</div>
 	<input class="callback__submit button" type="submit" value="Заказать">
 </form>
-
-	</div>
+</div>
 </div>
 <footer class="footer"> 
 	<div class="footer__inner container">
